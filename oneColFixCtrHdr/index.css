@@ -112,7 +112,6 @@ p {
 	height: 300px;
 	overflow: auto;
 	margin-top: 20px;
-	direction: ltr;
 }
 .stfName {
 	font-weight: bold;
@@ -125,10 +124,6 @@ p {
 .date {
 	font-weight: bold;
 	color: #660033;
-}
-
-#MCStaffDesc p {
-	margin: 10px;
 }
 
 
