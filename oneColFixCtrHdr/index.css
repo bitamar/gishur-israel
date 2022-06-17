@@ -128,10 +128,34 @@ p {
 
 
 #mainMenu {
+	direction: rtl;
 	float: left;
-	margin: 25px 0 0 15px;
+	margin: 50px 0 0 15px;
 	text-align: left;
 }
+#mainMenu a {
+	color: #45404d;
+	background-color: #eec5a2;
+	border: 1px solid #414189;
+	padding: 4px 8px 6px;
+	border-radius: 7px;
+	font-size: 15px;
+	position: relative;
+}
+#mainMenu a:hover {
+	font-weight: normal;
+	color: white;
+}
+#mainMenu a.active:before {
+	content: "";
+	position: absolute;
+	left: -12px;
+	top: -23px;
+	width: 43px;
+	height: 24px;
+	background: url("/images/piegon.png");
+}
+
 #FNext {
 	float: left;
 	margin: 15px 0 0 15px;
@@ -220,12 +244,13 @@ h1 {
 	font-size: 28px;
 	font-weight: bold;
 	margin: 0;
+	color: #000066;
 }
 #title {
 	float: right;
-	overflow: visible;
-	margin: 20px 95px 0 0;
+	padding: 20px 95px 0 0;
 	width: 140px;
+	height: 64px;
 }
 #whichCourse {
 	width: 205px;
